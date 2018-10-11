@@ -8,12 +8,17 @@
 	src: url(/Users/Anderson/Code/HTML/LogicWebsite/styles/Fonts/source-sans-pro/SourceSansPro-Semibold.otf);
 }
 
+html {
+	box-sizing: border-box;
+}
+
 * {
 	font-family: BT2;
 	padding: 0px;
 	margin: 0px;
 	overflow: auto;
 }
+
 
 body {
 	height: auto;
@@ -115,7 +120,6 @@ th:hover {
 }
 
 a {
-	
 	color: inherit;
 	text-decoration: inherit;
 }
@@ -166,7 +170,7 @@ a {
 #actualContent {
 	position: absolute;
 	top: 325px;
-	height: 550px;
+	height: 1500px;
 	margin: 0 auto;
 	left: 0;
 	right: 0;
@@ -176,14 +180,14 @@ a {
 	border: solid 5px #c1c1c1;
 	border-bottom-width: 0px;
 	box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-bottom: -50px;
 }
 
 #Welcome {
-	position: absolute;
-	top: 75px;
-	border: solid 5px black;
-	height: 315px;
-	width: 600px;
+	position: relative;
+	top: 50px;
+	height: 500px;
+	width: 700px;
 	right: 0;
 	left: 0;
 	margin: 0 auto;
@@ -195,7 +199,8 @@ a {
 	text-align: center;
 	left: 0;
 	right: 0;
-	font-size: 40px;
+	font-size: 30px;
+	height: auto;
 }
 
 #siteDesc {
@@ -204,12 +209,20 @@ a {
 	margin: 5px 10px;
 }
 
+#StepOne {
+	position: relative;
+	margin-left: 20px;
+}
+
 #pageFooter {
 	position: absolute;
+	right: 0;
+	left: 0;
+	padding: 1rem;
+	background-color: #efefef;
+	text-align: center;
 	height: 110px;
-	width: 100%;
-	background-color: green;
-	top: 880px;
+	z-index: 2;
 }
 
 #siteInfo {
@@ -224,10 +237,30 @@ a {
 	font-size: 10px;
 }
 
-#MixtapeInfo {
-	font-size: 30px;
+#downloadLinks {
+	margin: 0 auto;
+	margin-top: 15px;
+	right: 0;
+	left: 0;
+	padding: 10px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	
 }
 
+.downloadIconData {
+	padding: 10px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+}
 
+.downloadIcons {
+	height: 200px;
+	width: 200px;
+	
+}
 
-
+.stepDesc {
+	font-family: sourceSans;
+	font-size: 20px;
+}
