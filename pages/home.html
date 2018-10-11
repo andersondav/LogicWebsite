@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>	
+	<head>
+		<title>Logic Website</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="/Users/Anderson/Code/HTML/LogicWebsite/styles/main.css">
+		
+		<script type="text/javascript" src="/Users/Anderson/Code/HTML/LogicWebsite/styles/styles.js"></script>
+	</head>
+	
+	<body id="pageBackground" onmousemove="trackMouse(event);">
+		
+		<div id="fixedElements">
+			<div id="topOfPage">
+				<p id="WelcomeMessage"><a id="BackToHome" href="/Users/Anderson/Code/HTML/LogicWebsite/pages/home.html">
+					Logic Central</a></p>
+			</div>
+			<div id="album"></div>
+		</div>
+			
+		<div id="navBar">
+			<table id="navTable">
+					<tr>
+						<th class="navLink"><a href="/Users/Anderson/Code/HTML/LogicWebsite/pages/home.html" style="display: block">HOME</a></th>
+						<th class="navLink" id="listenButton"><a href="https://google.com" style="display: block">LISTEN</a></th>
+						<th class="navLink" id="learnButton"><a href="https://google.com" style="display: block">LEARN</a></th>
+						<th class="navLink"><a href="https://google.com" style="display: block">ABOUT</a></th>
+					</tr>
+			</table>
+		</div>
+		
+		<div id="listenDropDown">
+			<div id="SongSuggestor"><a href="https://google.com">
+				<p class="menuOption">Song Suggestor</p>
+			</a></div>
+			<div id="MixtapeInfo"><a href="https://google.com">
+				<p class="menuOption">Mixtape Info</p>
+			</a></div>	
+		</div>
+		
+		<div id="learnDropDown">
+			<div id="Logic"><a href="https://google.com">
+				<p class="menuOption">Logic</p>
+			</a></div>
+			<div id="TheRattpack"><a href="https://google.com">
+				<p class="menuOption">The Rattpack</p>
+			</a></div>	
+		</div>
+		
+		<div id="actualContent">
+			<div id="Welcome">
+				<div id="WelcomeText">
+					<h1>WELCOME!</h1>
+					<p id="siteDesc">This website was made to pay homage to hip hop artist Logic. Hailing from Gaithersburg, Maryland,
+					Logic began recording at a young age, and, thanks to his strong flows and inspirational message, has quickly risen to become one of the
+					most well-known and successful figures in the music industry today. Use the drop-down menus to get song suggestions and learn about Logic's come-up
+					as well as the rise of his well-known fanbase, the Rattpack!</p>
+				</div>
+			</div>
+		</div>
+		
+		<footer id="pageFooter">
+			<p id="siteInfo">Site created by Anderson David. All media and images are not owned by me. Album artwork owned by Logic's team.</p>
+		</footer>
+									
+	</body>
+	
+	<script>
+			setBG();
+			listenDropDown();
+			learnDropDown();
+	</script>
+	
+</html>
