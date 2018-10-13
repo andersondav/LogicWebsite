@@ -170,7 +170,7 @@ a {
 #actualContent {
 	position: absolute;
 	top: 325px;
-	height: 1500px;
+	height: 4750px;
 	margin: 0 auto;
 	left: 0;
 	right: 0;
@@ -186,7 +186,7 @@ a {
 #Welcome {
 	position: relative;
 	top: 50px;
-	height: 500px;
+	height: 450px;
 	width: 700px;
 	right: 0;
 	left: 0;
@@ -207,11 +207,6 @@ a {
 	font-family: sourceSans;
 	font-size: 20px;
 	margin: 5px 10px;
-}
-
-#StepOne {
-	position: relative;
-	margin-left: 20px;
 }
 
 #pageFooter {
@@ -235,6 +230,13 @@ a {
 	text-align: center;
 	vertical-align: middle;
 	font-size: 10px;
+}
+
+.Steps {
+	margin-top: 20px;
+	position: relative;
+	margin-left: 20px;
+	
 }
 
 #downloadLinks {
@@ -263,4 +265,17 @@ a {
 .stepDesc {
 	font-family: sourceSans;
 	font-size: 20px;
+	margin-left: 15px;
+}
+
+#Step2Image {
+	position: relative;
+	left: 150px;
+}
+
+#Step3Spotify {
+	width: 70%;
+	height: auto;
+	position: relative;
+	left: 100px;
 }
