@@ -134,22 +134,22 @@ function learnDropDown() {
 		}
 	});
 	
-	var theRattpack = document.getElementById("TheRattpack");
-	theRattpack.addEventListener("mouseover", function() {
-		document.getElementById("TheRattpack").style.backgroundColor = "#b2b2b2";
-	});
-	theRattpack.addEventListener("mouseleave", function() {
-		if(num < 5 || num == 10) {
-		document.getElementById("TheRattpack").style.backgroundColor = "#ffffff";
-		} else {
-			document.getElementById("TheRattpack").style.backgroundColor = "#000000";
-		}
-	});
-	
-	var learnDropDown = document.getElementById("learnDropDown");
-	learnDropDown.addEventListener("mouseleave", function() {
-		document.getElementById("learnDropDown").style.visibility = "hidden";
-	});
+	//var theRattpack = document.getElementById("TheRattpack");
+	//theRattpack.addEventListener("mouseover", function() {
+	//	document.getElementById("TheRattpack").style.backgroundColor = "#b2b2b2";
+	//});
+	//theRattpack.addEventListener("mouseleave", function() {
+	//	if(num < 5 || num == 10) {
+	//	document.getElementById("TheRattpack").style.backgroundColor = "#ffffff";
+	//	} else {
+	//		document.getElementById("TheRattpack").style.backgroundColor = "#000000";
+	//	}
+	//});
+	//
+	//var learnDropDown = document.getElementById("learnDropDown");
+	//learnDropDown.addEventListener("mouseleave", function() {
+	//	document.getElementById("learnDropDown").style.visibility = "hidden";
+	//});
 	
 	
 }

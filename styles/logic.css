@@ -1,0 +1,304 @@
+@font-face {
+	font-family: BT2;
+	src: url(/Users/Anderson/Code/HTML/LogicWebsite/styles/Fonts/PenumbraFlareStd-Semibold.otf);
+}
+
+@font-face {
+	font-family: sourceSans;
+	src: url(/Users/Anderson/Code/HTML/LogicWebsite/styles/Fonts/source-sans-pro/SourceSansPro-Semibold.otf);
+}
+
+html {
+	box-sizing: border-box;
+}
+
+* {
+	font-family: BT2;
+	padding: 0px;
+	margin: 0px;
+	overflow: auto;
+}
+
+
+body {
+	height: auto;
+	min-width: 1220px;
+}
+
+
+#pageBackground {
+}
+
+
+#fixedElements {
+	z-index: 3;
+	position: fixed;
+	height: auto;
+	width: 100%;
+
+}
+
+#topOfPage {
+	position: relative;
+	height: 40px;
+	width: 100%;
+	padding: 0px;
+	margin: 0 0;
+	font-family: BT2;
+	color: white;
+    font-size: 30px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 300;
+    line-height: 1;
+}
+
+#WelcomeMessage {
+	position: absolute;
+	top: 10px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	overflow: hidden;
+	
+}
+
+#album {
+	position: relative;
+	background-repeat: no-repeat;
+	padding: 0px;
+	margin: 0 auto;
+	right: 0;
+	left: 0;
+	height: 225px;
+	width: 1200px;
+	border: 10px solid black;
+	border-top-width: 0px;
+	overflow: hidden;
+}
+
+#navBar {
+	position: absolute;
+	z-index: 2;
+	background-color: red;
+	color: black;
+	right: 0;
+	left: 0;
+	margin: 0 auto;
+	width: 1220px;
+	min-height: 40px;
+	background-color: black;
+}
+
+#navTable {
+	table-layout: fixed;
+	margin: 0 0;
+	padding: 0 0;
+	font-family: BT2;
+	font-size: 25px;
+	width: 100%;
+	background-color: inherit;
+	height: 100%;
+	border-width: 0px;
+	border-color: #efefef;
+}
+
+.navLink {
+	color: inherit;
+	text-decoration: inherit;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-color: inherit;
+	margin: 0 0;
+	padding: 10px;
+
+}
+
+th:hover {
+	background-color: #b2b2b2;
+}
+
+a {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+#listenDropDown {
+	text-align: center;
+	font-size: 20px;
+	width: 305px;
+	color: black;
+	background-color: white;
+	position: absolute;
+	top: 325px;
+	margin: 0 auto;
+	right: 305px;
+	left: 0;
+	visibility: hidden;
+	padding: 0px;
+	z-index: 2;
+	
+}
+
+.menuOption {
+	text-align: center;
+	height: inherit;
+	width: inherit;;
+	display: flex;
+	vertical-align: middle;
+	padding: 10px;
+}
+
+#learnDropDown {
+	z-index: 2;
+	text-align: center;
+	font-size: 20px;
+	width: 305px;
+	color: black;
+	background-color: white;
+	position: absolute;
+	top: 325px;
+	margin: 0 auto;
+	right: 0;
+	left: 305px;
+	visibility: hidden;
+	padding: 0px;
+	
+}
+
+#actualContent {
+	position: absolute;
+	top: 325px;
+	height: 3850px;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	width: 800px;
+	z-index: 1;
+	background-color: #f1f1f1;
+	border: solid 5px #c1c1c1;
+	border-bottom-width: 0px;
+	box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-bottom: -50px;
+}
+
+#Welcome {
+	position: relative;
+	top: 50px;
+	height: 350px;
+	width: 700px;
+	right: 0;
+	left: 0;
+	margin: 0 auto;
+}
+
+#WelcomeText {
+	position: absolute;
+	top: 3.33333333%;
+	text-align: center;
+	left: 0;
+	right: 0;
+	font-size: 30px;
+	height: auto;
+}
+
+#siteDesc {
+	font-family: sourceSans;
+	font-size: 20px;
+	margin: 5px 10px;
+}
+
+#pageFooter {
+	position: absolute;
+	right: 0;
+	left: 0;
+	padding: 1rem;
+	background-color: #efefef;
+	text-align: center;
+	height: 110px;
+	z-index: 2;
+}
+
+#siteInfo {
+	position: absolute;
+	top: 50px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto auto;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 10px;
+}
+
+.Steps {
+	margin-top: 20px;
+	position: relative;
+	margin-left: 20px;
+	
+}
+
+#downloadLinks {
+	margin: 0 auto;
+	margin-top: 15px;
+	right: 0;
+	left: 0;
+	padding: 10px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	
+}
+
+.downloadIconData {
+	padding: 10px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+}
+
+.downloadIcons {
+	height: 200px;
+	width: 200px;
+	
+}
+
+.stepDesc {
+	font-family: sourceSans;
+	font-size: 20px;
+	margin-left: 15px;
+	margin-top: 10px;
+}
+
+#Step2Image {
+	position: relative;
+	display: block;
+	max-width: 600px;
+	height: auto;
+	right: 50px;
+	left: 0;
+	margin: 0 auto;
+}
+
+#LIVEmbed {
+	display: block;
+	position: relative;
+	width: 560px;
+	height: 315px;
+	right: 50px;
+	left: 0;
+	margin: 0 auto;
+}
+
+#Step3Spotify {
+	width: 70%;
+	height: auto;
+	position: relative;
+	left: 100px;
+}
+
+#LIVLink {
+	font-family: sourceSans;
+	color: blue;
+	font-size: 20px;
+	text-decoration: underline;
+}
