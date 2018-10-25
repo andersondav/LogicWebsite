@@ -184,3 +184,19 @@ function positionFooter() {
 
 }
 
+function highlightSubmit() {
+	document.getElementById("submitButton").style.backgroundColor = "#b2b2b2";
+}
+
+function backToNormalSubmit() {
+	document.getElementById("submitButton").style.backgroundColor = "black";
+}
+
+function submitComment() {
+	var commentBox = document.getElementById("commentBox");
+	
+	if (commentBox.innerHTML == "") {
+		document.getElementById("commentWarning").style.visibility = "visible";
+	}
+}
+

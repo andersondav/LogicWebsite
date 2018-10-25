@@ -181,26 +181,29 @@ a {
 	border-bottom-width: 0px;
 	box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 20px 0 rgba(0, 0, 0, 0.19);
 	margin-bottom: -50px;
+	text-align: center;
 }
 
 #Welcome {
-	position: relative;
-	top: 50px;
+	position: static;
 	height: 350px;
 	width: 700px;
 	right: 0;
 	left: 0;
 	margin: 0 auto;
+	border: solid red;
+	margin-top: 50px;
 }
 
 #WelcomeText {
-	position: absolute;
+	position: relative;
 	top: 3.33333333%;
 	text-align: center;
 	left: 0;
 	right: 0;
 	font-size: 30px;
 	height: auto;
+	border: solid green;
 }
 
 #siteDesc {
@@ -232,73 +235,55 @@ a {
 	font-size: 10px;
 }
 
-.Steps {
-	margin-top: 20px;
-	position: relative;
-	margin-left: 20px;
-	
-}
-
-#downloadLinks {
-	margin: 0 auto;
-	margin-top: 15px;
+#commentBoxContainer {
+	position: static;
+	top: 100px;
+	height: 300px;
+	width: 80%;
 	right: 0;
 	left: 0;
-	padding: 10px;
-	padding-bottom: 0px;
-	padding-top: 0px;
-	
+	margin: 0 auto;
+	border: dashed;
+	overflow: hidden;
+	margin-top: 50px;	
 }
 
-.downloadIconData {
-	padding: 10px;
-	padding-bottom: 0px;
-	padding-top: 0px;
-}
-
-.downloadIcons {
-	height: 200px;
-	width: 200px;
-	
-}
-
-.stepDesc {
-	font-family: sourceSans;
+#commentBox {
+	display: block;
+	width: 94%;
+	height: 100%;
+	align-content: center;
+	position: relative;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	padding: 3% 3%;
+	resize: none;
 	font-size: 20px;
-	margin-left: 15px;
+}
+
+#submitButton {
+	background-color: black;
+	color: white;
+	position: static;
+	height: auto;
+	font-size: 40px;
+	width: 150px;
+	margin-left: 80px;
 	margin-top: 10px;
+	padding: 5px 5px;
+	vertical-align: middle;
+	cursor: grab;
+	vertical-align: middle;
 }
 
-#Step2Image {
-	position: relative;
-	display: block;
-	max-width: 600px;
-	height: auto;
-	right: 50px;
+#commentWarning {
+	display: inline-block;
+	position: static;
+	color: red;
+	right: 0;
 	left: 0;
 	margin: 0 auto;
-}
-
-#LIVEmbed {
-	display: block;
-	position: relative;
-	width: 560px;
-	height: 315px;
-	right: 50px;
-	left: 0;
-	margin: 0 auto;
-}
-
-#Step3Spotify {
-	width: 70%;
-	height: auto;
-	position: relative;
-	left: 100px;
-}
-
-#LIVLink {
-	font-family: sourceSans;
-	color: blue;
-	font-size: 20px;
-	text-decoration: underline;
+	margin-top: 10px;
+	visibility: hidden;
 }

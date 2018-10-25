@@ -56,9 +56,17 @@
 					for the website, please make sure to send them to me through the comment box below! -Anderson</p>
 				</div>
 			</div>
+			<div id="commentBoxContainer" rows="5" cols="50">
+				<textarea id="commentBox" placeholder="Write your comment here" style="overflow: hidden"></textarea>
+			</div>
+			<div id="submitButton" onclick="submitComment();" onmouseover="highlightSubmit();" onmouseout="backToNormalSubmit();">
+				<p onclick="submitComment();" onmouseover="highlightSubmit();" onmouseout="backToNormalSubmit();">Submit</p>
+			</div>
+			<div id="commentWarning">
+				<p>Please enter a comment before clicking Submit.</p>
+			</div>
+			
 		</div>
-		
-		
 		
 		<footer id="pageFooter">
 			<p id="siteInfo">Site created by Anderson David. All media and images are not owned by me. Album artwork owned by Logic's team.</p>
