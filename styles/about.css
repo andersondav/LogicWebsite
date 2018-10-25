@@ -1,11 +1,11 @@
 @font-face {
 	font-family: BT2;
-	src: url(/Users/Anderson/Code/HTML/LogicWebsite/styles/Fonts/PenumbraFlareStd-Semibold.otf);
+	src: url(./Fonts/PenumbraFlareStd-Semibold.otf);
 }
 
 @font-face {
 	font-family: sourceSans;
-	src: url(/Users/Anderson/Code/HTML/LogicWebsite/styles/Fonts/source-sans-pro/SourceSansPro-Semibold.otf);
+	src: url(./Fonts/source-sans-pro/SourceSansPro-Semibold.otf);
 }
 
 html {
