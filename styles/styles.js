@@ -199,12 +199,12 @@ var app = express();
 app.use(express.static(__dirname));
 
 function submitComment() {
-	//var commentBox = document.getElementById("commentBox");
+	var commentBox = document.getElementById("commentBox");
 	var comment = "";
 	
-	//if (commentBox.value == "") {
-	//	document.getElementById("commentWarning").style.visibility = "visible";
-	//} else {
+	if (commentBox.value == "") {
+		document.getElementById("commentWarning").style.visibility = "visible";
+	} else {
 		comment = 'HERE IS A SAMPLE COMMENT';//document.getElementById("commentWarning").innerHTML;
 		fs.exists('comments.txt', function(exists) {
 			if (exists) {
@@ -216,7 +216,7 @@ function submitComment() {
 				console.log('file doesnt exist');
 			}
 		});
-	//}	
+	}	
 }
 
 submitComment();
