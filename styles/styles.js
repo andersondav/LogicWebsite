@@ -1,16 +1,16 @@
 
 const colorAndBackgrounds = [
-	["#000000", "../images/Albums/Psychological.jpg", "0% 30%"],
-	["#000000", "../images/Albums/YoungBroke.jpg", "0% 35%"],
-	["#000000", "../images/Albums/YoungSinatra.jpg", "0% 30%"],
-	["#000000", "../images/Albums/YSUndeniable.jpg", "0% 40%"],
-	["#000000", "../images/Albums/YSWTF.jpg", "0% 45%"],
-	["#142328", "../images/Albums/UP.jpg", "0% 35%"],
-	["#1e2850", "../images/Albums/TITS.jpg", "0% 30%"],
-	["#dcaa3c", "../images/Albums/BT.jpg", "0% 25%"],
-	["#c8b496", "../images/Albums/Everybody.jpg", "0% 70%"],
-	["#dcaa3c", "../images/Albums/BT2.jpg", "0% 35%"],
-	["#000000", "../images/Albums/YS4.jpg", "0% 35%"]
+	["#000000", "./Albums/Psychological.jpg", "0% 30%"],
+	["#000000", "./Albums/YoungBroke.jpg", "0% 35%"],
+	["#000000", "./Albums/YoungSinatra.jpg", "0% 30%"],
+	["#000000", "./Albums/YSUndeniable.jpg", "0% 40%"],
+	["#000000", "./Albums/YSWTF.jpg", "0% 45%"],
+	["#142328", "./Albums/UP.jpg", "0% 35%"],
+	["#1e2850", "./Albums/TITS.jpg", "0% 30%"],
+	["#dcaa3c", "./Albums/BT.jpg", "0% 25%"],
+	["#c8b496", "./Albums/Everybody.jpg", "0% 70%"],
+	["#dcaa3c", "./Albums/BT2.jpg", "0% 35%"],
+	["#000000", "./Albums/YS4.jpg", "0% 35%"]
 ];
 
 let num = Math.floor(Math.random()*11);
