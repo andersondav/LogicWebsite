@@ -191,7 +191,6 @@ a {
 	right: 0;
 	left: 0;
 	margin: 0 auto;
-	border: solid red;
 	margin-top: 50px;
 }
 
@@ -203,7 +202,6 @@ a {
 	right: 0;
 	font-size: 30px;
 	height: auto;
-	border: solid green;
 }
 
 #siteDesc {
