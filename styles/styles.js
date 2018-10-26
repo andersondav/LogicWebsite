@@ -193,23 +193,30 @@ function backToNormalSubmit() {
 }
 
 var fs = require('fs');
+var express = require("express");
+var app = express();
+
+app.use(express.static(__dirname));
 
 function submitComment() {
-	var commentBox = document.getElementById("commentBox");
+	//var commentBox = document.getElementById("commentBox");
 	var comment = "";
 	
-	if (commentBox.innerHTML == "") {
-		document.getElementById("commentWarning").style.visibility = "visible";
-	} else {
+	//if (commentBox.value == "") {
+	//	document.getElementById("commentWarning").style.visibility = "visible";
+	//} else {
 		comment = 'HERE IS A SAMPLE COMMENT';//document.getElementById("commentWarning").innerHTML;
-		fs.exists('comments.json', function(exists) {
+		fs.exists('comments.txt', function(exists) {
 			if (exists) {
-				fs.writeFile('comments.json', comment + '\n\n\n', (err) => {
+				fs.appendFile('comments.txt', comment + '\n\n\n', (err) => {
 					if (err) throw err;
 					console.log('The file has been saved');
 				});
-			}	
+			} else {
+				console.log('file doesnt exist');
+			}
 		});
-	}	
+	//}	
 }
 
+submitComment();
