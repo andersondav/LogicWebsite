@@ -192,11 +192,24 @@ function backToNormalSubmit() {
 	document.getElementById("submitButton").style.backgroundColor = "black";
 }
 
+var fs = require('fs');
+
 function submitComment() {
 	var commentBox = document.getElementById("commentBox");
+	var comment = "";
 	
 	if (commentBox.innerHTML == "") {
 		document.getElementById("commentWarning").style.visibility = "visible";
-	}
+	} else {
+		comment = 'HERE IS A SAMPLE COMMENT';//document.getElementById("commentWarning").innerHTML;
+		fs.exists('comments.json', function(exists) {
+			if (exists) {
+				fs.writeFile('comments.json', comment + '\n\n\n', (err) => {
+					if (err) throw err;
+					console.log('The file has been saved');
+				});
+			}	
+		});
+	}	
 }
 
